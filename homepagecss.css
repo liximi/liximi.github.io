@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: #ffece3;
+}
+#h1{
+    text-align:left;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:#8ad5ee;
+    font-size:64px;
+    height: 85px;
+    background-image: url("bgimg.jpg");
+    background-repeat: round;
+}
+#main{
+    text-align:center;
+    font-size:32px;
+
+}
+#backtotop{
+    background-color: #f8eeb4;
+    height: 12%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: gray;
+}

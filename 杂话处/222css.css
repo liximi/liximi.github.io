@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+#h1{
+    text-align:center;
+    color:red;
+    font-size:60px;
+    height: 30px;
+}
+#main{
+    text-align:center;
+    background-color: rgb(255, 232, 219);
+    font-size: 14px;
+    height: 600px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: gray;
+}

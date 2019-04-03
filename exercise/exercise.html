@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript练习</title>
+    <script src="exercise_js.js"></script>
+</head>
+
+<body bgcolor="grey">
+    <p id="time">打开网页时的时间为：
+        <script>
+            document.write(Date());
+        </script>
+    </p>
+
+    <br/>
+    <b>定义粗体字</b>
+    <br/>
+    <big>定义大号字</big>
+    <br/>
+    <em>定义着重文字</em>
+    <br/>
+    <i>定义斜体字</i>
+    <br/>
+    <small>定义小号字</small>
+    <br>
+    <strong>定义加重语气</strong>
+    <br/>
+    <sub>定义下标字</sub>
+    <br/>
+    <sup>定义上标字</sup>
+    <br/>
+    <ins>定义插入字</ins>
+    <br/>
+    <del>定义删除字</del>
+    <br/>
+    <p id="p1">这是一段文本,点击下方可设置它的可见性</p>
+
+    <botton onclick="myfunc('p1')">
+        click1
+    </botton>
+    </br>
+
+    <p id="p2">点击下方</p>
+
+    <botton onclick="myfunc1('p2')" id="bot1">
+        click2
+    </botton>
+
+    <p align="center">
+        <br/>
+        <a href="#time">Back to TOP</a>
+    </p>
+</body>
+
+</html>
