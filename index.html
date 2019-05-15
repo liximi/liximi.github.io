@@ -3,39 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Web开发学习</title>
-    <link REL="STYLESHEET" type="text/css" href="homepagecss.css" />
+    <title>LIXIMI</title>
+    <link REL="STYLESHEET" type="text/css" href="index.css" />
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <h2 id="h1">HOME</h2>
-
-    <p id="main">
-        <br/>
-        <img src=".\touxiang.png" width="150" height="150" alt="鲨鱼头像" />
-        <br/>
-        <br/>
-        <a href="http://www.google.com" target="_blank">>Click to Google</a>
-        <br/>
-        <a href=".\杂话处\website_222.html">>Click to 222</a>
-        <br/>
-        <a href=".\exercise\exercise.html">>Click to exercise</a>
-        <br/>
-        <br/>下面没东西了下面没东西了下面没东西了
-        <br/>下面没东西了下面没东西了下面没东西了
-        <br/>下面没东西了下面没东西了下面没东西了
-        <br/>下面没东西了下面没东西了下面没东西了
-        <br/>下面没东西了下面没东西了下面没东西了
-        <br/>下面没东西了下面没东西了下面没东西了
-        <br/>
-
-    </p>
-
-    <p align="center" id="backtotop">
-        <br/>
-        <a href="#h1">Back to TOP</a>
-    </p>
-
+    <div id="circle" onclick="backTop()"></div>
+    <header>
+        <div style="float:left"><a href="#home" id="LOGO">LIXIMI</a></div>
+        <div>
+            <ul style="list-style-type:none;width:600px;margin:auto;padding:0;">
+                <li class="nav"><a href="#home">HOME</a></li>
+                <li class="nav"><a href="#about">ABOUT</a></li>
+                <li class="nav"><a href="#skills">SKILLS</a></li>
+                <li class="nav"><a href="#works">WORKS</a></li>
+                <li class="nav"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="pages" id="home" style="background-color:darkcyan">
+            
+        </div>
+        <div class="pages" id="about" style="background-color:rgb(201, 139, 175)">
+            
+        </div>
+        <div class="pages" id="skills" style="background-color:rgb(142, 231, 146)">
+            
+        </div>
+        <div class="pages" id="works" style="background-color:rgb(241, 175, 136)">
+            
+        </div>
+        <div class="pages" id="contact" style="background-color:rgb(179, 179, 179)">
+            
+        </div>
+    </div>
 </body>
 
 </html>
