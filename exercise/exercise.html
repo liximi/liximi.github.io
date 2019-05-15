@@ -1,56 +1,72 @@
+
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Javascript练习</title>
-    <script src="exercise_js.js"></script>
-</head>
-
-<body bgcolor="grey">
-    <p id="time">打开网页时的时间为：
-        <script>
-            document.write(Date());
-        </script>
-    </p>
-
-    <br/>
-    <b>定义粗体字</b>
-    <br/>
-    <big>定义大号字</big>
-    <br/>
-    <em>定义着重文字</em>
-    <br/>
-    <i>定义斜体字</i>
-    <br/>
-    <small>定义小号字</small>
-    <br>
-    <strong>定义加重语气</strong>
-    <br/>
-    <sub>定义下标字</sub>
-    <br/>
-    <sup>定义上标字</sup>
-    <br/>
-    <ins>定义插入字</ins>
-    <br/>
-    <del>定义删除字</del>
-    <br/>
-    <p id="p1">这是一段文本,点击下方可设置它的可见性</p>
-
-    <botton onclick="myfunc('p1')">
-        click1
-    </botton>
-    </br>
-
-    <p id="p2">点击下方</p>
-
-    <botton onclick="myfunc1('p2')" id="bot1">
-        click2
-    </botton>
-
-    <p align="center">
-        <br/>
-        <a href="#time">Back to TOP</a>
-    </p>
-</body>
-
+<html lang="en">
+ 
+	<head>
+		<meta charset="UTF-8" />
+		<title>滚动一定距离导航栏固定</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-size: 40px;
+				font-family: '微软雅黑';
+				text-align: center;
+				line-height: 100px;
+				width: 100%;
+			}
+			/*顶部*/
+			
+			.top {
+				height: 100px;
+				background: blue;
+			}
+			/*导航栏部分*/
+			
+			.nav {
+				height: 100px;
+				background: red;
+			}
+			/*导航栏变异部分*/
+			
+			.nav2 {
+				height: 100px;
+				background: yellowgreen;
+			}
+			/*测试部分*/
+			
+			.test {
+				background: #6495ED;
+				height: 2000px;
+				padding-top: 100px;
+			}
+			
+			.fixnav {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+			}
+		</style>
+	</head>
+ 
+	<body>
+		<div class="top">顶部</div>
+		<div class="nav">导航栏部分</div>
+		<div class="nav2">导航栏变异部分</div>
+		<div class="test">这个区域仅仅是用于测试的</div>
+	</body>
+ 
 </html>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(".nav2").hide();
+		$(window).scroll(function() {
+			if($(document).scrollTop() >= 200) {
+				$(".nav2").addClass("fixnav").slideDown();
+			} else {
+				$(".nav2").hide();
+			}
+		})
+	})
+</script>
